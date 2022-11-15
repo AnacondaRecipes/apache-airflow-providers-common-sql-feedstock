@@ -19,6 +19,7 @@ requirements:
     - python
     - setuptools
     - pip
+    - wheel
   run:
     - python
     - sqlparse >=0.4.2
