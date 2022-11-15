@@ -36,6 +36,9 @@ test:
 about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-common-sql package
+  description: |
+    This is a provider package for common.sql provider.
+    All classes for this provider package are in airflow.providers.common.sql python package.
   license: Apache-2.0
   license_file:
     - LICENSE
