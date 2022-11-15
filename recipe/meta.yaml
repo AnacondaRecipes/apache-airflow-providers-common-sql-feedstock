@@ -10,17 +10,17 @@ source:
   sha256: 510cd732014248514196727e649ed2c70960f3c4a73b62b4c21a2a58bd92b445
 
 build:
-  noarch: python
+  skipt: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - setuptools
     - pip
   run:
-    - python >=3.7
+    - python
     - sqlparse >=0.4.2
 
 test:
