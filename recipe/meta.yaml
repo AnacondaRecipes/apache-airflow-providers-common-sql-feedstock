@@ -44,8 +44,8 @@ about:
     - LICENSE
     - NOTICE
   license_family: Apache
-  doc_url: https://airflow.apache.org/docs/apache-airflow-providers-common-sql/stable/index.html
-  dev_url: https://github.com/apache/airflow/
+  doc_url: https://airflow.apache.org/docs/apache-airflow-providers-common-sql/
+  dev_url: https://github.com/apache/airflow/tree/main/airflow/providers/common/sql/
 
 extra:
   recipe-maintainers:
