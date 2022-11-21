@@ -10,17 +10,18 @@ source:
   sha256: 510cd732014248514196727e649ed2c70960f3c4a73b62b4c21a2a58bd92b445
 
 build:
-  noarch: python
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - setuptools
     - pip
+    - wheel
   run:
-    - python >=3.7
+    - python
     - sqlparse >=0.4.2
 
 test:
@@ -35,13 +36,16 @@ test:
 about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-common-sql package
+  description: |
+    This is a provider package for common.sql provider.
+    All classes for this provider package are in airflow.providers.common.sql python package.
   license: Apache-2.0
   license_file:
     - LICENSE
     - NOTICE
   license_family: Apache
-  doc_url: https://airflow.apache.org/docs/apache-airflow-providers-common-sql/stable/index.html
-  dev_url: https://github.com/apache/airflow/
+  doc_url: https://airflow.apache.org/docs/apache-airflow-providers-common-sql/
+  dev_url: https://github.com/apache/airflow/tree/main/airflow/providers/common/sql/
 
 extra:
   recipe-maintainers:
